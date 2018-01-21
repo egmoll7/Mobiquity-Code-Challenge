@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		883870492014353800589BE3 /* UIColor+Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Movie.h"; sourceTree = "<group>"; };
 		8847D5672013FFAB00CB31E2 /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		8847D5682013FFAB00CB31E2 /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 		8847D56A20140A6400CB31E2 /* MovieCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCache.h; sourceTree = "<group>"; };
@@ -78,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8838704A2014354400589BE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				883870492014353800589BE3 /* UIColor+Movie.h */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8838704D20152C6200589BE3 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				8847D56A20140A6400CB31E2 /* MovieCache.h */,
+				8847D56B20140A6400CB31E2 /* MovieCache.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		8847D5652013FF8400CB31E2 /* Movies  */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +135,7 @@
 		88FA7C4C201381C600B5F1BD /* Mobiquity Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				88FA7C8F2013AD1D00B5F1BD /* Constants.h */,
 				88FA7C7E201388D000B5F1BD /* Models */,
 				88FA7C752013827600B5F1BD /* Custom Cells */,
 				88FA7C71201381D800B5F1BD /* View Controllers */,
@@ -128,9 +147,8 @@
 				88FA7C5B201381C600B5F1BD /* Info.plist */,
 				88FA7C5C201381C600B5F1BD /* main.m */,
 				88FA7C872013A43800B5F1BD /* API Manager */,
-				88FA7C8F2013AD1D00B5F1BD /* Constants.h */,
-				8847D56A20140A6400CB31E2 /* MovieCache.h */,
-				8847D56B20140A6400CB31E2 /* MovieCache.m */,
+				8838704D20152C6200589BE3 /* Singleton */,
+				8838704A2014354400589BE3 /* Extensions */,
 			);
 			path = "Mobiquity Code Challenge";
 			sourceTree = "<group>";
@@ -381,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -430,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

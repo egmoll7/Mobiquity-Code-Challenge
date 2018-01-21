@@ -29,19 +29,25 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self setUp];
-  
-  _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-  _searchController.searchResultsUpdater = self;
-  _searchController.obscuresBackgroundDuringPresentation = false;
-  _searchController.searchBar.placeholder = @"Search";
-  self.navigationItem.searchController = _searchController;
-  self.definesPresentationContext = YES;
 }
 
 #pragma mark - Private Methods
 - (void)setUp {
   
   self.title = @"Movies";
+  
+  _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+  _searchController.searchResultsUpdater = self;
+  _searchController.obscuresBackgroundDuringPresentation = false;
+  _searchController.searchBar.placeholder = @"Search";
+  
+  self.definesPresentationContext = YES;
+  
+  if (@available(iOS 11.0, *)) {
+    self.navigationItem.searchController = _searchController;
+  } else {
+    self.tableView.tableHeaderView = _searchController.searchBar;
+  }
   
   self.tableView.dataSource = self;
   self.tableView.delegate = self;
@@ -86,8 +92,6 @@
     } else {
       detailVC.movie = _movies[indexPath.row];
     }
-    
-    
   }
 }
 

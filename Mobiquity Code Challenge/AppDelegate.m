@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+Movie.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
-  UINavigationBar.appearance.tintColor = [UIColor colorWithRed:97.0/255.0 green:61.0/255.0 blue:193.0/255.0 alpha:1.0];
+  UINavigationBar.appearance.tintColor = [UIColor moviePurpleColor];
+  UISearchBar.appearance.tintColor = [UIColor moviePurpleColor];
   
   return YES;
 }
