@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8847D5692013FFAB00CB31E2 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847D5682013FFAB00CB31E2 /* DetailController.m */; };
+		8847D56C20140A6400CB31E2 /* MovieCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847D56B20140A6400CB31E2 /* MovieCache.m */; };
 		88FA7C4F201381C600B5F1BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C4E201381C600B5F1BD /* AppDelegate.m */; };
-		88FA7C52201381C600B5F1BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C51201381C600B5F1BD /* ViewController.m */; };
 		88FA7C55201381C600B5F1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FA7C53201381C600B5F1BD /* Main.storyboard */; };
 		88FA7C57201381C600B5F1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FA7C56201381C600B5F1BD /* Assets.xcassets */; };
 		88FA7C5A201381C600B5F1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FA7C58201381C600B5F1BD /* LaunchScreen.storyboard */; };
 		88FA7C5D201381C600B5F1BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C5C201381C600B5F1BD /* main.m */; };
 		88FA7C67201381C700B5F1BD /* Mobiquity_Code_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C66201381C700B5F1BD /* Mobiquity_Code_ChallengeTests.m */; };
+		88FA7C742013820E00B5F1BD /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C732013820E00B5F1BD /* MoviesViewController.m */; };
+		88FA7C7C201382B700B5F1BD /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C7A201382B700B5F1BD /* MovieCell.m */; };
+		88FA7C7D201382B700B5F1BD /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FA7C7B201382B700B5F1BD /* MovieCell.xib */; };
+		88FA7C832013894F00B5F1BD /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C822013894F00B5F1BD /* Movie.m */; };
+		88FA7C912013AD8C00B5F1BD /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88FA7C902013AD8B00B5F1BD /* APIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8847D5672013FFAB00CB31E2 /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		8847D5682013FFAB00CB31E2 /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		8847D56A20140A6400CB31E2 /* MovieCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCache.h; sourceTree = "<group>"; };
+		8847D56B20140A6400CB31E2 /* MovieCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCache.m; sourceTree = "<group>"; };
 		88FA7C4A201381C600B5F1BD /* Mobiquity Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobiquity Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FA7C4D201381C600B5F1BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88FA7C4E201381C600B5F1BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88FA7C50201381C600B5F1BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88FA7C51201381C600B5F1BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88FA7C54201381C600B5F1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88FA7C56201381C600B5F1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FA7C59201381C600B5F1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +48,16 @@
 		88FA7C62201381C600B5F1BD /* Mobiquity Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobiquity Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FA7C66201381C700B5F1BD /* Mobiquity_Code_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mobiquity_Code_ChallengeTests.m; sourceTree = "<group>"; };
 		88FA7C68201381C700B5F1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FA7C722013820E00B5F1BD /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		88FA7C732013820E00B5F1BD /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		88FA7C79201382B700B5F1BD /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		88FA7C7A201382B700B5F1BD /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		88FA7C7B201382B700B5F1BD /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		88FA7C812013894F00B5F1BD /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		88FA7C822013894F00B5F1BD /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		88FA7C842013A42C00B5F1BD /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		88FA7C8F2013AD1D00B5F1BD /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		88FA7C902013AD8B00B5F1BD /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8847D5652013FF8400CB31E2 /* Movies  */ = {
+			isa = PBXGroup;
+			children = (
+				88FA7C722013820E00B5F1BD /* MoviesViewController.h */,
+				88FA7C732013820E00B5F1BD /* MoviesViewController.m */,
+			);
+			path = "Movies ";
+			sourceTree = "<group>";
+		};
+		8847D5662013FF8E00CB31E2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8847D5672013FFAB00CB31E2 /* DetailController.h */,
+				8847D5682013FFAB00CB31E2 /* DetailController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		88FA7C41201381C600B5F1BD = {
 			isa = PBXGroup;
 			children = (
@@ -81,15 +117,20 @@
 		88FA7C4C201381C600B5F1BD /* Mobiquity Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				88FA7C7E201388D000B5F1BD /* Models */,
+				88FA7C752013827600B5F1BD /* Custom Cells */,
+				88FA7C71201381D800B5F1BD /* View Controllers */,
 				88FA7C4D201381C600B5F1BD /* AppDelegate.h */,
 				88FA7C4E201381C600B5F1BD /* AppDelegate.m */,
-				88FA7C50201381C600B5F1BD /* ViewController.h */,
-				88FA7C51201381C600B5F1BD /* ViewController.m */,
 				88FA7C53201381C600B5F1BD /* Main.storyboard */,
 				88FA7C56201381C600B5F1BD /* Assets.xcassets */,
 				88FA7C58201381C600B5F1BD /* LaunchScreen.storyboard */,
 				88FA7C5B201381C600B5F1BD /* Info.plist */,
 				88FA7C5C201381C600B5F1BD /* main.m */,
+				88FA7C872013A43800B5F1BD /* API Manager */,
+				88FA7C8F2013AD1D00B5F1BD /* Constants.h */,
+				8847D56A20140A6400CB31E2 /* MovieCache.h */,
+				8847D56B20140A6400CB31E2 /* MovieCache.m */,
 			);
 			path = "Mobiquity Code Challenge";
 			sourceTree = "<group>";
@@ -101,6 +142,43 @@
 				88FA7C68201381C700B5F1BD /* Info.plist */,
 			);
 			path = "Mobiquity Code ChallengeTests";
+			sourceTree = "<group>";
+		};
+		88FA7C71201381D800B5F1BD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8847D5662013FF8E00CB31E2 /* Detail */,
+				8847D5652013FF8400CB31E2 /* Movies  */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		88FA7C752013827600B5F1BD /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88FA7C79201382B700B5F1BD /* MovieCell.h */,
+				88FA7C7A201382B700B5F1BD /* MovieCell.m */,
+				88FA7C7B201382B700B5F1BD /* MovieCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		88FA7C7E201388D000B5F1BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88FA7C812013894F00B5F1BD /* Movie.h */,
+				88FA7C822013894F00B5F1BD /* Movie.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88FA7C872013A43800B5F1BD /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				88FA7C902013AD8B00B5F1BD /* APIManager.m */,
+				88FA7C842013A42C00B5F1BD /* APIManager.h */,
+			);
+			path = "API Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +265,7 @@
 			files = (
 				88FA7C5A201381C600B5F1BD /* LaunchScreen.storyboard in Resources */,
 				88FA7C57201381C600B5F1BD /* Assets.xcassets in Resources */,
+				88FA7C7D201382B700B5F1BD /* MovieCell.xib in Resources */,
 				88FA7C55201381C600B5F1BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FA7C52201381C600B5F1BD /* ViewController.m in Sources */,
+				88FA7C742013820E00B5F1BD /* MoviesViewController.m in Sources */,
 				88FA7C5D201381C600B5F1BD /* main.m in Sources */,
+				88FA7C912013AD8C00B5F1BD /* APIManager.m in Sources */,
+				8847D56C20140A6400CB31E2 /* MovieCache.m in Sources */,
+				8847D5692013FFAB00CB31E2 /* DetailController.m in Sources */,
+				88FA7C832013894F00B5F1BD /* Movie.m in Sources */,
+				88FA7C7C201382B700B5F1BD /* MovieCell.m in Sources */,
 				88FA7C4F201381C600B5F1BD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

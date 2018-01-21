@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailController.h
 //  Mobiquity Code Challenge
 //
 //  Created by Eduardo Moll on 1/20/18.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
-@interface ViewController : UIViewController
+@interface DetailController : UIViewController
 
+@property Movie *movie;
 
 @end
-
